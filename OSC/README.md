@@ -2,6 +2,25 @@
 
 Adapted from Spencer's instructions (thank you!!)
 
+## Table of contents
+
+1. [Table of contents](#table-of-contents)
+2. [Directory / file outline](#directory--file-outline)
+3. [Set up environment for AG on OSC](#set-up-environment-for-ag-on-osc)
+4. [Install AG on OSC](#install-ag-on-osc)
+5. [Run AG as batch job](#run-ag-as-batch-job)
+
+## Directory / file outline
+
+```text
+OSC/
+├── README.md                 # These setup and batch-job instructions
+├── OSC_AG_env_extensive.yml  # Full conda env export (referenced in setup)
+├── OSC_AG_env_sparse.yml     # Sparse/manual conda env export (referenced in setup)
+├── AG_OSC_template.ipynb     # Jupyter template for running AlphaGenome on OSC
+└── ag_batch.sh               # Example Slurm batch script (modules, env, GPU checks)
+```
+
 ## Set up environment for AG on OSC
 
 1. [https://ondemand.osc.edu/pun/sys/dashboard](https://ondemand.osc.edu/pun/sys/dashboard)
