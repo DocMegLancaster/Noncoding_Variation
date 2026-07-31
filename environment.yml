@@ -1,0 +1,11 @@
+name: py311
+channels:
+  - conda-forge
+  - nvidia
+dependencies:
+  - python=3.11
+  - ipykernel
+  # CUDA toolchain components for local GPU inference (README step 2.2)
+  - cuda-nvcc
+  - cuda-runtime
+  - cudnn
