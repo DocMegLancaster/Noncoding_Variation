@@ -12,10 +12,11 @@
 https://ondemand.osc.edu/
 - use for starting up JupyterLab instances! file browser is pretty clunky
 - go to Interactive Apps -> Jupyter -> change hours, node type, cores as needed -> Launch!
+- allows for file editing, terminal access, git access all through JupyterLab interface
 
 ## logging in via ssh in VSCode
 1. Log into SSH remote directory username@ascend.osc.edu
-2. 
+- allows for file editing, terminal access, git access all through VSCode interface 
 
 # osc hacks
 
