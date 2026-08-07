@@ -1,21 +1,40 @@
-# osc hacks
-## edit your bashrc to add shortcuts for common commands
-```bash
-alias q='squeue -u <USERNAME>'
-```
-# important
+# welcome to OSC!
+# accessing and navigating OSC
 
-- any jobs you run **must be run on the Ascend cluster** (perks of being [COM](https://www.osc.edu/resources/technical_support/supercomputers/ascend/osu_college_of_medicine_compute_service))
-
-
-# navigating the hpc
-
-## logging in via ssh
+## logging in via ssh in terminal
 
 1. In terminal/command line run: 
   `` $ ssh username@ascend.osc.edu ``
   and then enter your OSC password when prompted
 2. You will initially be dumped in your home dir (ex. ``/users/ACCOUNT_NUMBER/username``)
+
+## logging in via OnDemand
+https://ondemand.osc.edu/
+- use for starting up JupyterLab instances! file browser is pretty clunky
+- go to Interactive Apps -> Jupyter -> change hours, node type, cores as needed -> Launch!
+
+## logging in via ssh in VSCode
+1. Log into SSH remote directory username@ascend.osc.edu
+2. 
+
+# osc hacks
+
+## edit your bashrc to add shortcuts for common commands
+your .bashrc 
+```bash
+alias q='squeue -u <USERNAME>'
+foldername="/fs/ess/PAS2905"
+```
+
+- set up alias commands so that you don't have to type out entire commands for common ones
+- can set up directory name variables in your .bashrc in your home directory and then in terminal use `cd $variablename` to change to directory
+
+
+# important
+
+- any batch jobs you run **must be run on the Ascend cluster on the nextgen partition** (perks of being [COM](https://www.osc.edu/resources/technical_support/supercomputers/ascend/osu_college_of_medicine_compute_service))
+
+
 
 # links and resources
 
