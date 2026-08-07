@@ -18,6 +18,27 @@ https://ondemand.osc.edu/
 1. Log into SSH remote directory username@ascend.osc.edu
 - allows for file editing, terminal access, git access all through VSCode interface 
 
+# submitting batch jobs
+Batch jobs allow you to run commands remotely- you submit a bash file that contains all commands or script calls that you would like to run, and then send it off to run remotely. The commands will run in the background on a remote computer, so that when you come back the code will be complete, allowing you to do other things and run analysis without being locally connected to the HPC. 
+
+## standard batch job bash header lines
+```bash
+#!/bin/bash
+#SBATCH --account=ACCOUNT_NUMBER
+#SBATCH --partition=nextgen
+#SBATCH --job-name=JOB-NAME
+#SBATCH --mem=64gb
+#SBATCH --time=40:00:00
+#SBATCH --mail-type=END,FAIL
+#SBATCH --output=R-%x.%j.out
+#SBATCH --error=R-%x.%j.err
+#SBATCH --nodes=1
+#SBATCH --gpus-per-node=1
+#SBATCH --gpus-per-task=1
+```
+
+- change the mem, nodes, gpus-per-node/gpus-per-task as needed
+
 # osc hacks
 
 ## edit your bashrc to add shortcuts for common commands
