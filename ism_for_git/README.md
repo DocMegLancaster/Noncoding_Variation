@@ -1,19 +1,19 @@
 A special thanks to Claude Code for helping me build this script!
 
-##Setup
+## Setup
 
-#1. 
+# 1. 
 
 Retrieve one or more AG API keys. These API keys must be your own. They are free with a Google account.
 
-#2. 
+# 2. 
 
 Install dependencies, usually done through
 ```bash
 pip install -r requirements.txt
 ```
 
-#3.
+# 3.
 
 Create a file named ".env" within the same folder as "api_based_ism.py".
 Type in your API keys like this, one per line:
@@ -27,15 +27,15 @@ AG_API_KEY_2="your_second_key"
 AG_API_KEY_3="your_third_key"
 ```
 
-#4.
+# 4.
 
 Configure the file for your run. Gene strand, name, and chromosome, as well as the ISM region scores are predicted for and the model context window, can be modified at the top.
 If you would like to add scorers/modalities, include them under _build_scorers(), and you will need to update extract_score() accordingly to filter for a specific, single value.
 
 
-##Benchmarks
+## Benchmarks
 
-#Note: All of these benchmarks were retrieved when using five scorers across the three splicing modalities (what is currently in the api_based_ism.py file).
+# Note: All of these benchmarks were retrieved when using five scorers across the three splicing modalities (what is currently in the api_based_ism.py file).
 
 For a 5kb region in the center of BAG3, here were the results: 
 1 key: 12.98 min
